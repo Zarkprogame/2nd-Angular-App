@@ -6,7 +6,6 @@ import { SideMenuComponent } from "../../components/side-menu/side-menu";
   selector: 'app-dashboard-page-component',
   imports: [RouterOutlet, SideMenuComponent],
   templateUrl: './dashboard-page-component.html',
-  styleUrl: './dashboard-page-component.css'
 })
 export default class DashboardPageComponent {
 
