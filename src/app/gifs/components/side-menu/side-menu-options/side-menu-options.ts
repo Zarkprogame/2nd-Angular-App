@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { GifService } from 'src/app/gifs/services/gifs.service';
 
 
 @Component({
@@ -9,6 +10,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './side-menu-options.css'
 })
 export class SideMenuOptionsComponent {
+
+  Gifservice = inject(GifService);
+
   menuOptions: MenuOption[] = [
     {
       label: 'Trending',
